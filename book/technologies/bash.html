@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Section 2</title>
+        <title>Bash</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../getting-started.html">Getting Started</a></li><li class="chapter-item expanded "><a href="../chapter1/section1.html"><strong aria-hidden="true">1.</strong> Section 1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter1/section2.html"><strong aria-hidden="true">1.1.</strong> Section 2</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter2/section1.html"><strong aria-hidden="true">2.</strong> Section 1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter2/section2.html" class="active"><strong aria-hidden="true">2.1.</strong> Section 2</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../Introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="../technologies/tech.html"><strong aria-hidden="true">1.</strong> The Technologies</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../technologies/bash.html" class="active"><strong aria-hidden="true">1.1.</strong> Bash</a></li><li class="chapter-item expanded "><a href="../technologies/docker.html"><strong aria-hidden="true">1.2.</strong> Docker</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -173,24 +173,217 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p>Exercitation laboris veniam excepteur sint elit laborum laboris ullamco sit in. Lorem deserunt dolor ullamco anim proident incididunt aliqua officia qui velit velit esse id. Cillum cupidatat duis veniam ullamco pariatur eiusmod minim aliqua. Duis ad sint esse do do officia aute consequat ex nostrud laborum duis in. Eiusmod qui non eu reprehenderit duis excepteur cillum ad irure mollit qui. Sit anim laboris labore labore tempor ullamco dolore et anim. Qui ut eu Lorem ea ipsum.</p>
-<p>Ullamco laboris est velit duis laboris nisi. Ad qui nostrud ad anim commodo. Eiusmod ipsum nostrud veniam cillum eiusmod nulla aliquip laborum sunt. Nostrud tempor sint labore ut commodo culpa.</p>
-<p>Amet non fugiat ipsum Lorem elit dolor do culpa velit mollit amet officia enim tempor. Sint culpa magna cupidatat tempor. Irure do esse Lorem dolor ad Lorem eiusmod ipsum qui sit. Duis do nisi reprehenderit velit anim elit ut irure laborum consectetur est aliquip. Dolore minim pariatur do esse. Qui excepteur nulla minim ea aute amet officia culpa. Consequat nisi id ex consectetur esse duis exercitation laborum occaecat laborum sint consequat excepteur reprehenderit.</p>
-<p>Incididunt nostrud occaecat nostrud non duis eiusmod ea. Lorem deserunt in pariatur cillum sit consectetur occaecat Lorem incididunt veniam laborum amet. Adipisicing anim sint elit dolore aute ex eiusmod et consequat fugiat amet dolore ad. Aute magna qui reprehenderit enim. Eu sunt est tempor enim duis reprehenderit veniam ut occaecat esse labore. Tempor non ad ad excepteur laboris laboris dolor ullamco ex incididunt cillum laborum sit.</p>
-<p>Eiusmod adipisicing in non aliqua ex dolor. Dolore mollit culpa id laborum laboris labore consequat. Minim veniam commodo veniam excepteur aliqua laborum pariatur do quis Lorem quis commodo dolore. Aliqua magna sit eu voluptate minim ex eiusmod do magna tempor eu nostrud deserunt. Cupidatat ut irure aliquip ad irure. Nisi fugiat anim excepteur labore ad.</p>
-<p>Consectetur cupidatat aliqua duis in nulla sit culpa. Ad voluptate adipisicing irure duis. In ad mollit ex anim aute officia cupidatat officia do enim elit cupidatat proident. Dolor et ipsum voluptate aliqua. Duis proident excepteur qui est nisi labore anim. Amet irure aliqua exercitation excepteur consequat officia labore velit reprehenderit. Voluptate qui irure et excepteur nulla do ex nisi labore labore anim aute et.</p>
-<p>Incididunt est mollit officia consectetur esse commodo quis irure est pariatur qui irure quis adipisicing. Dolore minim eu id sunt eu sint excepteur consequat labore commodo ex incididunt sit. Aliquip pariatur veniam veniam et ut occaecat irure eu.</p>
-<p>Non ut proident tempor Lorem laborum occaecat cillum id aute nulla mollit mollit duis. Enim deserunt non esse ad exercitation mollit laborum. Dolor anim irure non laborum laborum commodo aliquip laborum commodo commodo sit consectetur mollit elit. Irure consectetur ea ut tempor elit consectetur ut officia esse laborum deserunt. Ullamco mollit ad veniam reprehenderit ipsum irure voluptate proident aliqua. Veniam Lorem esse esse consectetur ullamco irure labore nisi excepteur enim. Consequat amet ut minim cupidatat aute labore.</p>
-<hr />
+                        <h1 id="bash-scripting-guide"><a class="header" href="#bash-scripting-guide">Bash Scripting Guide</a></h1>
+<h2 id="table-of-contents"><a class="header" href="#table-of-contents">Table of Contents</a></h2>
+<ul>
+<li><a href="#bash-scripting-guide">Bash Scripting Guide</a>
+<ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#1-introduction">1. Introduction</a></li>
+<li><a href="#2-basic-script-structure">2. Basic Script Structure</a></li>
+<li><a href="#3-variables">3. Variables</a></li>
+<li><a href="#4-conditional-statements">4. Conditional Statements</a></li>
+<li><a href="#5-loops">5. Loops</a></li>
+<li><a href="#6-functions">6. Functions</a></li>
+<li><a href="#7-command-line-arguments">7. Command Line Arguments</a></li>
+<li><a href="#8-file-operations">8. File Operations</a></li>
+<li><a href="#9-error-handling">9. Error Handling</a></li>
+<li><a href="#10-best-practices">10. Best Practices</a></li>
+<li><a href="#11-conclusion">11. Conclusion</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="1-introduction"><a class="header" href="#1-introduction">1. Introduction<a name="introduction"></a></a></h2>
+<p>Bash (Bourne Again SHell) is a command language and shell scripting language widely used in Unix-like operating systems. This guide provides an overview of basic Bash scripting concepts and best practices.</p>
+<h2 id="2-basic-script-structure"><a class="header" href="#2-basic-script-structure">2. Basic Script Structure<a name="basic-script-structure"></a></a></h2>
+<ul>
+<li>
+<p><strong>Shebang Line:</strong></p>
+<pre><code class="language-bash">#!/bin/bash
+</code></pre>
+</li>
+<li>
+<p><strong>Comments:</strong></p>
+<pre><code class="language-bash"># This is a comment
+</code></pre>
+</li>
+<li>
+<p><strong>Execution Permission:</strong></p>
+<pre><code class="language-bash">chmod +x script.sh
+</code></pre>
+</li>
+<li>
+<p><strong>Run Script:</strong></p>
+<pre><code class="language-bash">./script.sh
+</code></pre>
+</li>
+</ul>
+<h2 id="3-variables"><a class="header" href="#3-variables">3. Variables<a name="variables"></a></a></h2>
+<ul>
+<li>
+<p><strong>Assigning Variables:</strong></p>
+<pre><code class="language-bash">variable_name=&quot;value&quot;
+</code></pre>
+</li>
+<li>
+<p><strong>Accessing Variables:</strong></p>
+<pre><code class="language-bash">echo $variable_name
+</code></pre>
+</li>
+</ul>
+<h2 id="4-conditional-statements"><a class="header" href="#4-conditional-statements">4. Conditional Statements<a name="conditional-statements"></a></a></h2>
+<ul>
+<li>
+<p><strong>if statement:</strong></p>
+<pre><code class="language-bash">if [ condition ]; then
+  # commands
+fi
+</code></pre>
+</li>
+<li>
+<p><strong>elif statement:</strong></p>
+<pre><code class="language-bash">if [ condition ]; then
+  # commands
+elif [ another_condition ]; then
+  # commands
+fi
+</code></pre>
+</li>
+<li>
+<p><strong>case statement:</strong></p>
+<pre><code class="language-bash">case $variable in
+  pattern1)
+    # commands
+    ;;
+  pattern2)
+    # commands
+    ;;
+  *)
+    # default commands
+    ;;
+esac
+</code></pre>
+</li>
+</ul>
+<h2 id="5-loops"><a class="header" href="#5-loops">5. Loops<a name="loops"></a></a></h2>
+<ul>
+<li>
+<p><strong>for loop:</strong></p>
+<pre><code class="language-bash">for item in list; do
+  # commands
+done
+</code></pre>
+</li>
+<li>
+<p><strong>while loop:</strong></p>
+<pre><code class="language-bash">while [ condition ]; do
+  # commands
+done
+</code></pre>
+</li>
+<li>
+<p><strong>until loop:</strong></p>
+<pre><code class="language-bash">until [ condition ]; do
+  # commands
+done
+</code></pre>
+</li>
+</ul>
+<h2 id="6-functions"><a class="header" href="#6-functions">6. Functions<a name="functions"></a></a></h2>
+<ul>
+<li>
+<p><strong>Function Declaration:</strong></p>
+<pre><code class="language-bash">function_name() {
+  # commands
+}
+</code></pre>
+</li>
+<li>
+<p><strong>Function Call:</strong></p>
+<pre><code class="language-bash">function_name
+</code></pre>
+</li>
+<li>
+<p><strong>Function with Parameters:</strong></p>
+<pre><code class="language-bash">function_with_params() {
+  param1=$1
+  param2=$2
+  # commands
+}
+
+function_with_params arg1 arg2
+</code></pre>
+</li>
+</ul>
+<h2 id="7-command-line-arguments"><a class="header" href="#7-command-line-arguments">7. Command Line Arguments<a name="command-line-arguments"></a></a></h2>
+<ul>
+<li><strong>Accessing Command Line Arguments:</strong>
+<pre><code class="language-bash"># $1, $2, ... represent the first, second, etc. arguments
+echo &quot;First argument: $1&quot;
+</code></pre>
+</li>
+</ul>
+<h2 id="8-file-operations"><a class="header" href="#8-file-operations">8. File Operations<a name="file-operations"></a></a></h2>
+<ul>
+<li>
+<p><strong>Check if File Exists:</strong></p>
+<pre><code class="language-bash">if [ -e file ]; then
+  # commands
+fi
+</code></pre>
+</li>
+<li>
+<p><strong>Read from a File:</strong></p>
+<pre><code class="language-bash">while IFS= read -r line; do
+  echo &quot;$line&quot;
+done &lt; file.txt
+</code></pre>
+</li>
+<li>
+<p><strong>Write to a File:</strong></p>
+<pre><code class="language-bash">echo &quot;Hello, World!&quot; &gt; output.txt
+</code></pre>
+</li>
+</ul>
+<h2 id="9-error-handling"><a class="header" href="#9-error-handling">9. Error Handling<a name="error-handling"></a></a></h2>
+<ul>
+<li>
+<p><strong>Exit on Error:</strong></p>
+<pre><code class="language-bash">set -e
+</code></pre>
+</li>
+<li>
+<p><strong>Custom Error Messages:</strong></p>
+<pre><code class="language-bash">die() {
+  echo &quot;$1&quot; &gt;&amp;2
+  exit 1
+}
+
+# Usage: die &quot;Error message&quot;
+</code></pre>
+</li>
+</ul>
+<h2 id="10-best-practices"><a class="header" href="#10-best-practices">10. Best Practices<a name="best-practices"></a></a></h2>
+<ul>
+<li>Use meaningful variable names.</li>
+<li>Add comments for complex sections.</li>
+<li>Use indentation for readability.</li>
+<li>Test scripts on various environments.</li>
+</ul>
+<h2 id="11-conclusion"><a class="header" href="#11-conclusion">11. Conclusion<a name="conclusion"></a></a></h2>
+<p>Bash scripting is a powerful tool for automating tasks in a Unix-like environment. This guide covers fundamental concepts, but there is much more to explore. Refer to the <a href="https://www.gnu.org/software/bash/manual/bash.html">Bash manual</a> for detailed information and advanced features.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../chapter2/section1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../technologies/tech.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
+                            <a rel="next prefetch" href="../technologies/docker.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -198,10 +391,13 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../chapter2/section1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../technologies/tech.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
+                    <a rel="next prefetch" href="../technologies/docker.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>

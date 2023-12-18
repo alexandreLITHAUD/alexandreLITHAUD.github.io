@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Section 1</title>
+        <title>Docker</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../getting-started.html">Getting Started</a></li><li class="chapter-item expanded "><a href="../chapter1/section1.html"><strong aria-hidden="true">1.</strong> Section 1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter1/section2.html"><strong aria-hidden="true">1.1.</strong> Section 2</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter2/section1.html" class="active"><strong aria-hidden="true">2.</strong> Section 1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter2/section2.html"><strong aria-hidden="true">2.1.</strong> Section 2</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../Introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="../technologies/tech.html"><strong aria-hidden="true">1.</strong> The Technologies</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../technologies/bash.html"><strong aria-hidden="true">1.1.</strong> Bash</a></li><li class="chapter-item expanded "><a href="../technologies/docker.html" class="active"><strong aria-hidden="true">1.2.</strong> Docker</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -173,27 +173,192 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p>Dolore deserunt in voluptate qui ipsum sint minim sunt cillum deserunt aute do veniam. Do non ipsum cillum ad elit anim. Sint anim fugiat laboris consectetur.</p>
-<p>Mollit et sit magna amet mollit minim officia eiusmod aute adipisicing. Aute eiusmod fugiat eiusmod commodo amet. Ut reprehenderit occaecat voluptate amet labore pariatur reprehenderit esse minim ut minim sit minim exercitation. Ullamco irure sunt officia occaecat. Qui pariatur laboris cupidatat id. Esse ullamco aute labore ex nisi non. Aute proident proident cupidatat culpa laborum nulla.</p>
-<p>Ex labore veniam dolore anim qui. Occaecat ea adipisicing ea pariatur ad esse deserunt qui excepteur pariatur. Exercitation do duis dolor voluptate ipsum veniam proident ex cupidatat occaecat. Commodo enim minim exercitation ipsum nostrud amet.</p>
-<p>Aliqua adipisicing aliquip occaecat laborum et. Ipsum sunt officia reprehenderit adipisicing sit proident Lorem adipisicing. Nostrud magna ullamco est irure est enim excepteur consequat do amet ea. Magna elit elit velit duis ullamco consectetur commodo Lorem. Occaecat voluptate dolor incididunt commodo labore veniam et dolor ea aliqua. Non sit ea pariatur magna occaecat consectetur sunt id eu amet do proident. Do commodo excepteur do veniam pariatur ea nostrud eu.</p>
-<p>Deserunt id eu mollit voluptate do non culpa et dolor sint. Minim et fugiat dolore Lorem elit enim veniam ut amet cupidatat fugiat exercitation. Qui mollit qui sunt officia. Duis magna pariatur ut consectetur pariatur cillum qui irure tempor dolore culpa duis elit proident. Excepteur excepteur aliqua aute aliqua mollit culpa est cillum aliquip ullamco ad. Est laboris ea occaecat id cillum ad elit do pariatur. Do incididunt est ullamco pariatur duis incididunt aute ad.</p>
-<p>Enim consectetur incididunt ut id incididunt do. Nostrud exercitation ullamco laboris ullamco. Nulla sit excepteur nostrud sit ea. Nostrud amet dolore consectetur deserunt ea reprehenderit Lorem sint tempor. Enim excepteur nulla est minim.</p>
-<p>Mollit minim do cupidatat deserunt magna ut mollit labore veniam excepteur cupidatat ex consequat. Dolor culpa veniam enim fugiat nulla magna labore in amet. Irure cillum pariatur labore voluptate adipisicing nostrud in exercitation cillum duis. Tempor ad et quis sunt nostrud cupidatat irure minim aliqua nisi aliquip amet consectetur. Et anim deserunt dolor est aute do sint aliqua et. Reprehenderit nulla dolor velit est proident irure exercitation in labore anim magna non ut nisi. Sunt non id qui nulla voluptate reprehenderit aute ut deserunt do do ea velit officia.</p>
-<p>Laborum duis ullamco dolore aute occaecat officia deserunt. Qui proident reprehenderit ipsum minim. Aute nisi non sunt quis labore. Pariatur mollit elit culpa reprehenderit. Nisi est adipisicing magna consectetur et cupidatat amet quis exercitation. Et voluptate duis laborum aliquip ut ipsum sint duis laboris occaecat aliqua.</p>
-<hr />
+                        <h1 id="docker-documentation"><a class="header" href="#docker-documentation">Docker Documentation</a></h1>
+<h2 id="table-of-contents"><a class="header" href="#table-of-contents">Table of Contents</a></h2>
+<ul>
+<li><a href="#docker-documentation">Docker Documentation</a>
+<ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#1-introduction">1. Introduction</a></li>
+<li><a href="#2-installation">2. Installation</a>
+<ul>
+<li><a href="#21-docker-engine">2.1. Docker Engine</a></li>
+<li><a href="#22-docker-compose">2.2. Docker Compose</a></li>
+</ul>
+</li>
+<li><a href="#3-getting-started">3. Getting Started</a></li>
+<li><a href="#4-docker-commands">4. Docker Commands</a>
+<ul>
+<li><a href="#41-images">4.1. Images</a></li>
+<li><a href="#42-containers">4.2. Containers</a></li>
+<li><a href="#43-networking">4.3. Networking</a></li>
+<li><a href="#44-volumes">4.4. Volumes</a></li>
+</ul>
+</li>
+<li><a href="#5-dockerfile">5. Dockerfile</a></li>
+<li><a href="#6-docker-compose">6. Docker Compose</a></li>
+<li><a href="#7-docker-swarm">7. Docker Swarm</a></li>
+<li><a href="#8-best-practices">8. Best Practices</a></li>
+<li><a href="#9-troubleshooting">9. Troubleshooting</a></li>
+<li><a href="#10-conclusion">10. Conclusion</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="1-introduction"><a class="header" href="#1-introduction">1. Introduction<a name="introduction"></a></a></h2>
+<p><a href="https://www.docker.com/">Docker</a> is a platform that enables developers to automate the deployment of applications inside lightweight, portable containers. Containers allow applications and their dependencies to be packaged together, ensuring consistency across different environments.</p>
+<h2 id="2-installation"><a class="header" href="#2-installation">2. Installation<a name="installation"></a></a></h2>
+<h3 id="21-docker-engine"><a class="header" href="#21-docker-engine">2.1. Docker Engine</a></h3>
+<ul>
+<li>Follow the official <a href="https://docs.docker.com/engine/install/">Docker Engine installation guide</a> for your operating system.</li>
+</ul>
+<h3 id="22-docker-compose"><a class="header" href="#22-docker-compose">2.2. Docker Compose</a></h3>
+<ul>
+<li>Install Docker Compose by following the instructions in the <a href="https://docs.docker.com/compose/install/">official documentation</a>.</li>
+</ul>
+<h2 id="3-getting-started"><a class="header" href="#3-getting-started">3. Getting Started<a name="getting-started"></a></a></h2>
+<ul>
+<li>Verify your Docker installation by running <code>docker --version</code> and <code>docker-compose --version</code>.</li>
+<li>Run a simple container: <code>docker run hello-world</code>.</li>
+</ul>
+<h2 id="4-docker-commands"><a class="header" href="#4-docker-commands">4. Docker Commands<a name="docker-commands"></a></a></h2>
+<h3 id="41-images"><a class="header" href="#41-images">4.1. Images<a name="images"></a></a></h3>
+<ul>
+<li>
+<p><strong>List images:</strong></p>
+<pre><code class="language-bash">docker images
+</code></pre>
+</li>
+<li>
+<p><strong>Pull an image:</strong></p>
+<pre><code class="language-bash">docker pull image_name:tag
+</code></pre>
+</li>
+<li>
+<p><strong>Remove an image:</strong></p>
+<pre><code class="language-bash">docker rmi image_name:tag
+</code></pre>
+</li>
+</ul>
+<h3 id="42-containers"><a class="header" href="#42-containers">4.2. Containers<a name="containers"></a></a></h3>
+<ul>
+<li>
+<p><strong>List running containers:</strong></p>
+<pre><code class="language-bash">docker ps
+</code></pre>
+</li>
+<li>
+<p><strong>List all containers (including stopped):</strong></p>
+<pre><code class="language-bash">docker ps -a
+</code></pre>
+</li>
+<li>
+<p><strong>Run a container:</strong></p>
+<pre><code class="language-bash">docker run image_name
+</code></pre>
+</li>
+<li>
+<p><strong>Stop a running container:</strong></p>
+<pre><code class="language-bash">docker stop container_id
+</code></pre>
+</li>
+<li>
+<p><strong>Remove a container:</strong></p>
+<pre><code class="language-bash">docker rm container_id
+</code></pre>
+</li>
+</ul>
+<h3 id="43-networking"><a class="header" href="#43-networking">4.3. Networking<a name="networking"></a></a></h3>
+<ul>
+<li>
+<p><strong>List networks:</strong></p>
+<pre><code class="language-bash">docker network ls
+</code></pre>
+</li>
+<li>
+<p><strong>Create a network:</strong></p>
+<pre><code class="language-bash">docker network create network_name
+</code></pre>
+</li>
+</ul>
+<h3 id="44-volumes"><a class="header" href="#44-volumes">4.4. Volumes<a name="volumes"></a></a></h3>
+<ul>
+<li>
+<p><strong>List volumes:</strong></p>
+<pre><code class="language-bash">docker volume ls
+</code></pre>
+</li>
+<li>
+<p><strong>Create a volume:</strong></p>
+<pre><code class="language-bash">docker volume create volume_name
+</code></pre>
+</li>
+</ul>
+<h2 id="5-dockerfile"><a class="header" href="#5-dockerfile">5. Dockerfile<a name="dockerfile"></a></a></h2>
+<ul>
+<li>Create a Dockerfile to define the image configuration.</li>
+<li>Example Dockerfile:
+<pre><code class="language-Dockerfile">FROM base_image:tag
+
+WORKDIR /app
+
+COPY . .
+
+RUN npm install
+
+CMD [&quot;npm&quot;, &quot;start&quot;]
+</code></pre>
+</li>
+</ul>
+<h2 id="6-docker-compose"><a class="header" href="#6-docker-compose">6. Docker Compose<a name="docker-compose"></a></a></h2>
+<ul>
+<li>Define multi-container applications using a <code>docker-compose.yml</code> file.</li>
+<li>Example <code>docker-compose.yml</code>:
+<pre><code class="language-yaml">version: '3'
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - &quot;8080:80&quot;
+  app:
+    build: .
+    ports:
+      - &quot;3000:3000&quot;
+</code></pre>
+</li>
+</ul>
+<h2 id="7-docker-swarm"><a class="header" href="#7-docker-swarm">7. Docker Swarm<a name="docker-swarm"></a></a></h2>
+<ul>
+<li>Docker Swarm allows you to create and manage a cluster of Docker nodes.</li>
+<li>Initialize a Swarm:
+<pre><code class="language-bash">docker swarm init
+</code></pre>
+</li>
+</ul>
+<h2 id="8-best-practices"><a class="header" href="#8-best-practices">8. Best Practices<a name="best-practices"></a></a></h2>
+<ul>
+<li>Keep images small.</li>
+<li>Use multi-stage builds.</li>
+<li>Optimize Dockerfile layers.</li>
+<li>Use .dockerignore to exclude unnecessary files.</li>
+<li>Avoid running processes as root in containers.</li>
+</ul>
+<h2 id="9-troubleshooting"><a class="header" href="#9-troubleshooting">9. Troubleshooting<a name="troubleshooting"></a></a></h2>
+<ul>
+<li>Check container logs: <code>docker logs container_id</code>.</li>
+<li>Use <code>docker exec -it container_id /bin/bash</code> to access a container's shell.</li>
+<li>Check the Docker documentation and community forums for assistance.</li>
+</ul>
+<h2 id="10-conclusion"><a class="header" href="#10-conclusion">10. Conclusion<a name="conclusion"></a></a></h2>
+<p>Docker simplifies the process of deploying and managing applications in a consistent and portable manner. This documentation provides a basic overview of Docker concepts, commands, and best practices. Explore the <a href="https://docs.docker.com/">official Docker documentation</a> for more in-depth information and advanced topics.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../chapter1/section2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../technologies/bash.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../chapter2/section2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -201,13 +366,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../chapter1/section2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../technologies/bash.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../chapter2/section2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>
